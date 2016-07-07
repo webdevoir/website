@@ -1,0 +1,69 @@
+#posts_wrapper {
+  padding: 2em 0;
+  .post {
+    text-align: center;
+    .date {
+      font-size: 0.9em;
+      margin: 0;
+    }
+    h2 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $dark;
+        &:hover {
+          color: $highight;
+        }
+      }
+    }
+    hr {
+      margin: 3em auto;
+    }
+  }
+}
+
+// Pagination
+
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear: both;
+}
+
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0;
+  a, .previous_page, .current, .next_page {
+    padding: 0.75em 1em;
+    margin: 0 0.5em;
+    border-radius: 0.15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-weight: bold;
+    font-size: 0.7em;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+      background: $highight;
+      color: $white;
+    }
+  }
+  .current {
+    background: $highight;
+    color: $white;
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+      color: #C0C0C0;
+      background: $white;
+    }
+  }
+}
