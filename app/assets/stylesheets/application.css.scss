@@ -12,6 +12,7 @@ $border: #E9E9E9;
 
 body {
   font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 
 .wrapper {
@@ -26,7 +27,8 @@ body {
 }
 
 .wrapper_padding {
-  padding: 4rem 0;
+  //padding: 4rem 0;
+  padding-top: 1.5em;
 }
 
 .clearfix:before,
@@ -88,16 +90,18 @@ p, ul, ol {
 }
 
 hr {
-  width: 3em;
+  width: 2em;
   display: block;
   height: 2px;
   border: 0;
   border-top: 2px solid $highight;
-  margin: 2rem 0;
+  //margin: 2rem auto;
+  margin: 1.5rem auto;
 }
 
 #main_navigation {
-  padding: 2.5em 5%;
+  //padding: 2.5em 5%;
+  padding: 2em 10%;
   border-bottom: 1px solid $border;
   .name {
     font-weight: 700;
@@ -108,15 +112,21 @@ hr {
     padding: 1em;
     text-decoration: none;
     color: $dark;
-    float: left;
+    //float: left;
+    display: block;
   }
   nav {
-    float: right;
-    padding-top: 1rem;
+    //float: right;
+    //padding-top: 1rem;
+    padding-top: 1.5rem;
     a {
       color: $dark;
       text-decoration: none;
-      margin: 0 0 0 1rem;
+      //margin: 0 0 0 1rem;
+      margin-left: 2rem;
+      &:first-child {
+        margin-left: 0;
+      }
       font-size: 1rem;
     }
   }
@@ -131,7 +141,8 @@ hr {
 }
 
 #main_footer {
-  padding: 2.5em 5%;
+  //padding: 2.5em 5%;
+  padding: 1em 10%;
   border-top: 1px solid $border;
   .copyright {
     float: left;
@@ -189,6 +200,54 @@ input[type="submit"], .button {
 .button_wrapper {
   margin: 4em 0 0 0;
   text-align: center;
+}
+
+@media (min-width: 1000px) {
+  body {
+    text-align: left;
+  }
+
+  .wrapper_padding {
+    padding: 4rem 0;
+  }
+
+  hr {
+    width: 3em;
+    margin: 2rem 0;
+  }
+
+  #main_navigation {
+    padding: 2.5em 5%;
+    .name {
+      float: left;
+    }
+    nav {
+      float: right;
+      padding-top: 1rem;
+      a {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  #main_footer {
+    padding: 2.5em 5%;
+  }
+
+  // MOVE THIS TO WELCOME CSS
+  .col-1, .col-2, .col-3 {
+    float: left;
+  }
+
+  .col-1 {
+    width: 45%;
+    padding: 0 5% 0 2.5%;
+  }
+
+  .col-2, .col-3 {
+    width: 27.5%;
+    padding: 0 2.5%;
+  }
 }
 
 @import "welcome";
