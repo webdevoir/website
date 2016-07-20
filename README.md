@@ -32,7 +32,7 @@ Now you're now up and running at `http://localhost:3000/`
 
 Creating articles and projects requires a user login. In the rails console, create a new user:
 
-```sh
+```ruby
 User.create!(email: "you@example.com", password: "Rails4Life")
 ```
 
