@@ -2,16 +2,27 @@
 <html lang="en">
 <head>
   <title>Kane Montreuil | Software Developer | Atlanta</title>
-  <meta property="og:title" content="Kane Montreuil | Software Developer | Atlanta">
   <meta name="description" content="Mobile &amp; web app developer based in Atlanta.">
-  <meta property="og:description" content="Mobile &amp; web app developer based in Atlanta.">
-  <meta property="og:image" content="<%= asset_path('image.jpg') %>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= favicon_link_tag(source='favicon.ico') %>
   <link href="//fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
   <script src="//use.fontawesome.com/888b8fb47c.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <meta property="og:title" content="Kane Montreuil | Software Developer | Atlanta">
+  <meta property="og:image" content="<%= asset_path('image.jpg') %>">
+  <meta property="og:description" content="Mobile &amp; web app developer based in Atlanta.">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@kanemontreuil">
+  <meta name="twitter:title" content="Kane Montreuil | Software Developer | Atlanta">
+  <meta name="twitter:description" content="Mobile &amp; web app developer based in Atlanta.">
+  <meta name="twitter:image" content="<%= asset_path('image.jpg') %>">
+
+  <link rel=”publisher” href=”https://plus.google.com/+kanemontreuil">
+
   <%= csrf_meta_tags %>
 </head>
 <body>
