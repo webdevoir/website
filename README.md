@@ -1,6 +1,6 @@
 # Personal Website
 
-This is my personal website/blog built using Ruby on Rails. Go take a look, it's [live](http://kmon.me)! 🙂
+This is my personal website/blog built using Ruby on Rails. Go take a look, it's [live](http://montreuil.co)! 🙂
 
 ## Getting Started
 
